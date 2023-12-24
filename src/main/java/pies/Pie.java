@@ -4,8 +4,8 @@ import lombok.Data;
 
 import java.util.List;
 
-@Data
-public final class Pie {
+@Data(staticConstructor = "of")
+public class Pie {
   private String name;
   private List<Ingredient> ingredients;
 }
